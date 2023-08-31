@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="selected_icon_color">#EA6C00</color>
+    <color name="unselected_icon_color">#AAAEAC</color>
+    <color name="splashscreen_text_color">#79869F</color>
+    <color name="bottom_color">#EFEFEF</color>
+    <color name="explorer_color_text">#022150</color>
+    <color name="collection_color_text">#EA6C00</color>
+    <color name="grey">#868686</color>
+
+</resources>

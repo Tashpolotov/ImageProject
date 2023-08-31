@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/nescrolled"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+tools:context=".fragment.HomeFragment">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+
+>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
+
+
+        <TextView
+            android:id="@+id/tv_explorer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/explorer"
+            android:textSize="20sp"
+            android:fontFamily="@font/inter"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/explorer_color_text"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="70dp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/collection"
+            android:textSize="20sp"
+            android:fontFamily="@font/inter"
+            app:layout_constraintTop_toTopOf="@id/tv_explorer"
+            app:layout_constraintStart_toEndOf="@id/tv_explorer"
+            android:textColor="@color/collection_color_text"
+            android:layout_marginStart="4dp"
+            />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontal_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_collection"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fillViewport="true">
+
+                <LinearLayout
+                    android:id="@+id/linear_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/tv_collection"
+                    app:layout_constraintStart_toStartOf="@id/tv_explorer"
+                    android:layout_marginTop="46dp"
+                    android:layout_marginStart="26dp"
+                    android:orientation="horizontal"
+                    >
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_for_you"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/for_you"
+                            android:backgroundTint="@color/grey"
+                            app:cornerRadius="16dp"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/inter"
+                            android:textColor="@color/white"
+                            android:textAllCaps="false"
+
+                            />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_learning"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/learning"
+                            android:backgroundTint="@color/grey"
+                            app:cornerRadius="16dp"
+                            android:textSize="16sp"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/inter"
+                            android:textColor="@color/white"
+                            android:textAllCaps="false"
+
+                            />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_illustration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/illustration"
+                            android:backgroundTint="@color/grey"
+                            app:cornerRadius="16dp"
+                            android:textSize="16sp"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/inter"
+                            android:textColor="@color/white"
+                            android:textAllCaps="false"
+                            />
+                </LinearLayout>
+        </HorizontalScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/horizontal_scroll"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="32dp">
+
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_1"
+                    app:shapeAppearanceOverlay="@style/roundImage"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="30dp"
+                    />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_2"
+                    app:shapeAppearanceOverlay="@style/roundImage"
+                    app:layout_constraintStart_toEndOf="@id/imageView1"
+                    app:layout_constraintTop_toTopOf="@id/imageView1"
+                    android:layout_marginStart="20dp"
+                    />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:shapeAppearanceOverlay="@style/roundImage"
+                    android:src="@drawable/img_3"
+                    app:layout_constraintTop_toBottomOf="@id/imageView1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="30dp"
+
+                    />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:shapeAppearanceOverlay="@style/roundImage"
+                    app:layout_constraintStart_toEndOf="@id/imageView3"
+                    app:layout_constraintTop_toBottomOf="@id/imageView2"
+                    android:layout_marginStart="26dp"
+                    android:src="@drawable/img_4"
+                    android:layout_marginTop="30dp"
+                    />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:shapeAppearanceOverlay="@style/roundImage"
+                    app:layout_constraintTop_toBottomOf="@id/imageView3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:src="@drawable/img_5"
+                    android:layout_marginTop="30dp"
+
+                    />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_6"
+                    app:shapeAppearanceOverlay="@style/roundImage"
+                    app:layout_constraintStart_toEndOf="@id/imageView5"
+                    app:layout_constraintTop_toBottomOf="@id/imageView4"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="30dp"
+                    />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintTop_toBottomOf="@id/imageView5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="30dp"
+                    app:shapeAppearanceOverlay="@style/roundImage"
+                    android:src="@drawable/img_5"
+                    />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/roundImage"
+                    app:layout_constraintStart_toEndOf="@id/imageView7"
+                    app:layout_constraintTop_toBottomOf="@id/imageView6"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/img_6"
+                    />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/roundImage"
+                    app:layout_constraintTop_toBottomOf="@id/imageView7"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/img_5"
+                    />
+
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/roundImage"
+                    app:layout_constraintStart_toEndOf="@id/imageView9"
+                    app:layout_constraintTop_toBottomOf="@id/imageView8"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/img_6"
+                    />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/roundImage"
+                    app:layout_constraintTop_toBottomOf="@id/imageView9"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/img_5"
+                    />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/roundImage"
+                    app:layout_constraintStart_toEndOf="@id/imageView11"
+                    app:layout_constraintTop_toBottomOf="@id/imageView10"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/img_6"
+                    />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

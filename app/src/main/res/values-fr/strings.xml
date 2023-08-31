@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Projet Image</string>
+    <string name="we_ve_put_together_most_popular_collection_so_you_can_find_and_enjoy_your_favourite">Nous avons rassemblé la collection la plus populaire afin que vous puissiez trouver et profiter de votre favori.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Bonjour fragment vierge</string>
+    <string name="welcome">accueillir</string>
+    <string name="title">titre</string>
+    <string name="skip">sauter</string>
+    <string name="home">Maison</string>
+    <string name="bookmark">signet</string>
+    <string name="explorer">Explorateur</string>
+    <string name="collection">Collection</string>
+    <string name="for_you">Pour toi</string>
+    <string name="learning">Apprentissage</string>
+    <string name="illustration">Illustration</string>
+    <string name="image_save">La photo est enregistrée</string>
+    <string name="next">Suivant</string>
+    <string name="permission_not_granted">Permission non accordée</string>
+</resources>

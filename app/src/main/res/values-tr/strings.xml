@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">İmaj Projesi</string>
+    <string name="we_ve_put_together_most_popular_collection_so_you_can_find_and_enjoy_your_favourite">En sevdiğiniz koleksiyonu bulup keyfini çıkarabilmeniz için en popüler koleksiyonu bir araya getirdik.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Merhaba boş parça</string>
+    <string name="welcome">Hoş geldin</string>
+    <string name="title">başlık</string>
+    <string name="skip">atlamak</string>
+    <string name="home">Ev</string>
+    <string name="bookmark">yer imi</string>
+    <string name="explorer">Kaşif</string>
+    <string name="collection">Toplamak</string>
+    <string name="for_you">Senin için</string>
+    <string name="learning">Öğrenme</string>
+    <string name="illustration">İllüstrasyon</string>
+    <string name="image_save">Fotoğraf kaydedildi</string>
+    <string name="next">Sonraki</string>
+    <string name="permission_not_granted">İzin verilmedi</string>
+</resources>
